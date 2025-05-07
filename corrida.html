@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Corrida - Mobilidade App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="corrida-container">
+        <div class="map-simulation">
+            <p>🗺️ Mapa Simulado - Corrida</p>
+            <div id="driver" class="driver-marker">🚗</div>
+            <div id="originMarker" class="location-marker">📍</div>
+            <div id="destinationMarker" class="location-marker">🏁</div>
+        </div>
+        
+        <div class="ride-form">
+            <input type="text" id="origin" placeholder="Local de Partida" required>
+            <input type="text" id="destination" placeholder="Destino" required>
+            <button onclick="startRide()">Confirmar Corrida</button>
+        </div>
+
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <div id="price-info">
+            <p>🕒 Tempo Estimado: <span id="eta">5 min</span></p>
+            <p>💲 Valor Estimado: <span id="price">R$ 0,00</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

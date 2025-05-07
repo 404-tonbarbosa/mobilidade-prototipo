@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida em Andamento - Mobilidade App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="andamento-container">
+        <div class="map-simulation">
+            <p>🗺️ Mapa Simulado - Corrida em Andamento</p>
+            <div id="driverAndamento" class="driver-marker">🚗</div>
+            <div id="originAndamento" class="location-marker">📍</div>
+            <div id="destinationAndamento" class="location-marker">🏁</div>
+        </div>
+
+        <div id="ride-status">
+            <h3>Corrida em andamento...</h3>
+            <p id="eta-status">Tempo restante: <span id="time-left">5 min</span></p>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div id="driver-info">
+            <p>👨‍✈️ Motorista: João</p>
+            <p>📱 Contato: (11) 91234-5678</p>
+        </div>
+        
+        <div id="end-ride">
+            <button onclick="endRide()">Finalizar Corrida</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
